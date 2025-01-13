@@ -1,4 +1,5 @@
 //concatenar y hacer comentarios
+//conectar con +
 let _nombre= "Rita";
 let _apellido= "Castro";
 document.write(_nombre +" "+_apellido);
