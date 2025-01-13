@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a, b, sum, res, mul, div, risid, poten;
+        //pedir datos al usuario
+        a = parseInt( prompt ("ingrese valor 1"));
+        b = parseInt ( prompt ("ingrese el valor 2"));
+        //suma ej: sum=a + b (no realiza bein la suma) sino que los "une",los concatena, para ello debo colocarlo como "valor entero". Modifico  los valores que le pido al usuario colocando  un "ParseInt"
+        sum = a + b;
+        //resta
+        res = a-b;
+        //producto
+        mul = a * b;
+        //cociente
+        div = a / b;
+        //residuo de la división
+        resid = a % b;
+        //potenciación
+        poten = a ** b;
+
+        document.write("la suma es: " , sum);
+        document.write("<br>");
+        document.write("la resta es: " , res);
+        document.write("<br>");
+        document.write("el producto es: " , mul);
+        document.write("<br>");
+        document.write("el cociente es: " , div);
+        document.write("<br>");
+        document.write("el residuo es: " , resid);
+        document.write("<br>");
+        document.write("la potencia es: " , poten);
+        document.write("<br>");
+
+    </script>
+</body>
+</html>
