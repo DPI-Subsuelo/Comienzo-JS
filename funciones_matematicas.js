@@ -61,3 +61,4 @@ document.write("<br>");
 //calcular exponente
 var exponente= Math.pow(4,2);
 document.write("exponente de 4 a la 2: ", exponente);
+
