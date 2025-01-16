@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let palabra= "JavaScript, pueba piloto";
+    document.write('la palabra es: ',palabra);
+    document.write('<br>');
+
+    //ver tamaño de texto
+    document.write('cantidad de caracteres: ', palabra.length);
+    document.write('<br>');
+
+    //ver caracteres especificos
+    document.write('primeros 4 caracteres: ', palabra.slice(0,4));
+    document.write('<br>');
+    //tambien puede usarse
+    document.write('Los primeros 4 caracteres: ',palabra.substring(0,4));
+    document.write('<br>');
+
+    //cambiar valor de variable
+    let saludo = 'Hola a todos!!';
+    saludo =saludo.replace('Hola', 'Adios');
+    document.write(saludo);
+    document.write('<br>');
+
+    //Poner en mayusculas
+    document.write('en mayusculas: ', palabra.toUpperCase());
+    document.write('<br>');
+    //poner en minusculas 
+    document.write('En minusculas: ',palabra.toLowerCase());
+    document.write('<br>');
+
+    //unir textos
+    let palabra2 = 'Curso de ';
+    document.write('Union de palabras/texto: ', palabra2.concat(palabra));
+    document.write('<br>');
+
+    //acortar espacio entre texto
+    let palabra3= '     Hola     ';
+    document.write(palabra3);
+    document.write('<br>');
+    document.write(palabra3.trimStart());//elima espacios del lado izquierdo
+    document.write('<br>');
+    document.write(palabra3.trimEnd()); //elimina espacios del lado derecho
+    document.write('<br>');
+    document.write(palabra3.trim()); //elimina espacios a ambos lados
+
+    //cartar cantidad de  caracteres
+    document.write(palabra.split('Script'));
+
+    </script>
+</body>
+</html>
