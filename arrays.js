@@ -58,11 +58,11 @@ document.write('<br>');
 
 //copiarun array
 let cantidades =[140,200,300,500,600];
-let copia = cantidades.slice(1,4);
+let copia = cantidades.slice(1,4); //se copia a partir de la posicion 1 hasta la 4, sin incluirla.
 document.write('Array copia: ', copia);
 document.write('<br>');
 
-document.write(frutas.sort());
+document.write(frutas.sort()); //ordena el arreglo de forma alfabetica
 document.write('<br>');
 
 let objetos = ['tinta, ', 'maquina, ', 'planeta, ', 'almacen, ' ,'bucle'];
