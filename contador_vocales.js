@@ -1,6 +1,6 @@
 let palabra = '';
 
-palabra = prompt("Ingrese una Palabra para se analizada");
+palabra = prompt("Ingrese una Palabra para ser analizada");
 
 if (!palabra || palabra.trim() === "") //detecta valores como null, undefined, o una cadena vacía "".
 //palabra.trim() === "": Verifica si la palabra tiene solo espacios en blanco.
