@@ -1,10 +1,10 @@
 /*let valor
 valor= parseInt (prompt("Ingrese un valor del 1 al 3"));
 
-switch (valor) {
+switch (valor) { //permite ejecutar bloques de codigo
     case 1:
         document.write('Ingreso el uno');
-        break;
+        break; //se usapara salir del bucle
     case 2:
         document.write('Ingreso el dos');
         break;
