@@ -1,4 +1,4 @@
-class Persona {
+class Persona { //creacion de objetos
     nombre ="Homero "; //atributos
     apellido= "Simpson";
     domicilio= "Av. Siempreviva ";
