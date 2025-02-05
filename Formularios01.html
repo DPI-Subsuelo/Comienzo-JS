@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Contador con botón</h4>
+    <p>Valor: <span id="contador">0</span></p>
+    <form>
+        <input type="button" value="Incrementar" onclick="incrementar ()">
+    </form>
+    <script>
+        let contador = 0;
+        function incrementar() {
+            contador++;
+            document.getElementById('contador').textContent = contador; //actualiza el contador dinamicamente
+            
+        }
+     
+
+    </script>
+</body>
+</html>
