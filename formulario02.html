@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Acceso de usuarios</h4>
+    <form>
+        Ingrese usuario: <input type="text" id="usuario"> <br> <br><!--se crea un input dentro del formulario para el usuario-->
+        Ingrese clave: <input type="password" id="clave"> <!--input para la clave, cada input tiene un id para ser identificado
+        //el tipo passwoed se coloca para que se oculte la contraseña-->
+
+        <br><br>
+        <input type="button" value="Acceder" onclick="verificar()">
+    </form>
+    <p id="mensaje"></p> <!-- Aquí se mostrará el mensaje -->
+    <script> //aca se va a dar la funcionalidad del boton del formulario
+        let control = 0;
+        let contrasenia = "acceso123"; // esta es la contraseña del usuario para acceder
+        function verificar(){ // se crea una variable dentro de la funcion "verificar", est
+            let clave =document.getElementById("clave").value; // la variable clave es igual a la funcion  document.get...Id que ésta capta el elemento por su id, en este caso es la ("clave")
+              
+            let usuario = document.getElementById("usuario").value; // Captura el usuario
+            let mensaje = document.getElementById("mensaje"); // Captura el párrafo donde se mostrará el mensaje
+
+            if (usuario === "") {
+                mensaje.innerHTML = "<span style='color:orange;'>Por favor, ingrese un usuario</span>";
+                return; // Evita que continúe la validación si no hay usuario
+            }
+            if(clave!= contrasenia) {
+                //alert ('CLAVE INCORRECTA, intente nuevamente'); se puede mostrar una alerta con un msj y que recargue
+               
+                mensaje.innerHTML = "<span style='color:red;'>CLAVE INCORRECTA, intente nuevamente</span>";
+              } else {
+                mensaje.innerHTML = "<span style='color:green;'>BIENVENID@ " + usuario + "!</span>";
+              }
+              
+              
+              //else (clave == contrasenia); { NO LLEVA UNA CONDICION EN PARENTESIS
+                //document.writer ("BIENVENIDO", usuario); DEBE SER SIN COMA, SIEMPRE UN +
+              //  document.write("BIENVENID@ " + usuario)
+              }
+              
+    </script>
+</body>
+</html>
