@@ -15,7 +15,7 @@
         <br><br>
         <input type="button" value="Acceder" onclick="verificar()">
     </form>
-    <p id="mensaje"></p> <!-- Aquí se mostrará el mensaje -->
+    <!--<p id="mensaje"></p> // Aquí se mostrará el mensaje -->
     <script> //aca se va a dar la funcionalidad del boton del formulario
         let control = 0;
         let contrasenia = "acceso123"; // esta es la contraseña del usuario para acceder
@@ -30,11 +30,12 @@
                 return; // Evita que continúe la validación si no hay usuario
             }
             if(clave!= contrasenia) {
-                //alert ('CLAVE INCORRECTA, intente nuevamente'); se puede mostrar una alerta con un msj y que recargue
+                alert ('CLAVE INCORRECTA, intente nuevamente'); //se puede mostrar una alerta con un msj y que recargue
                
-                mensaje.innerHTML = "<span style='color:red;'>CLAVE INCORRECTA, intente nuevamente</span>";
+                //mensaje.innerHTML = "<span style='color:red;'>CLAVE INCORRECTA, intente nuevamente</span>";
               } else {
-                mensaje.innerHTML = "<span style='color:green;'>BIENVENID@ " + usuario + "!</span>";
+                window.open("https://www.canva.com") //con la clave correcta se abre una pestaña que lleva al inicio de canva
+                //mensaje.innerHTML = "<span style='color:green;'>BIENVENID@ " + usuario + "!</span>";
               }
               
               
