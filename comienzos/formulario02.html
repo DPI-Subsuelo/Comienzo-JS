@@ -29,9 +29,12 @@
                 mensaje.innerHTML = "<span style='color:orange;'>Por favor, ingrese un usuario</span>";
                 return; // Evita que continúe la validación si no hay usuario
             }
-            if(clave!= contrasenia) {
-                alert ('CLAVE INCORRECTA, intente nuevamente'); //se puede mostrar una alerta con un msj y que recargue
-               
+            if(clave!= contrasenia || clave == "") {
+                alert ('Clave no correspondiente o vacia, intente nuevamente'); //se puede mostrar una alerta con un msj y que recargue
+               control++;
+               if(control >=3){
+                alert ("intentos agotados, acceso bloqueado/ contactar a soporte técnico") // esta condicion permite solo 3 intento
+               }
                 //mensaje.innerHTML = "<span style='color:red;'>CLAVE INCORRECTA, intente nuevamente</span>";
               } else {
                 window.open("https://www.canva.com") //con la clave correcta se abre una pestaña que lleva al inicio de canva
