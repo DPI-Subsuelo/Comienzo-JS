@@ -1,0 +1,6 @@
+.pokemon-img {
+    width: 130px; /* Ancho */
+    height: 130px; /* Alto */
+    display: block; /* Evita espacios extra */
+    
+}

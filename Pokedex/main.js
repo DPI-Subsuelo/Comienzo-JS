@@ -18,7 +18,7 @@ async function searchPokemon() {
         pokedexContainer.innerHTML= `
         
             <h2>${data.name.toLowerCase()}</h2>
-            <img src = "${data.sprites.front_default}" alt="${data.name}"></img>
+            <img src="${data.sprites.front_default}" alt="${data.name}" class="pokemon-img">
             <p>Numero: ${data.id}</p>
             <p>Altura: ${data.height/10} m</p>
             <p>Peso: ${data.weight/10} kg </p>
