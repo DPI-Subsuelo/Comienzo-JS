@@ -1,6 +1,33 @@
+/* .pokemon-img {
+    width: 130px; /* Ancho */
+    height: 130px; /* Alto */
+    display: block; /* Evita espacios extra */
+     
 .pokemon-img {
     width: 130px; /* Ancho */
     height: 130px; /* Alto */
     display: block; /* Evita espacios extra */
-    
+    margin: 10px auto; /* Centra la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo sutil */
+    padding: 5px; /* Espacio interno */
+}
+.pokedex-card {
+    background-color: rgb(255, 255, 255); /* Fondo blanco */
+    padding: 20px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+    text-align: center;
+    max-width: 600px; /* Ancho máximo */
+    margin: 20px auto; /* Centrado en la pantalla */
+}
+
+
+.pokemon-images {
+    background-color: rgb(255, 249, 249); /* Fondo blanco */
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
